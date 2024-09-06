@@ -1,0 +1,22 @@
+[archive]
+  other = "Archive"
+[archive_text]
+  other = "Archives"
+[author_profile]
+  other = "Profil de {{ . }}"
+[designed_by]
+  other = "Conçu par {{ .name }}"
+[go_back]
+  other = "Retour"
+[latest_posts]
+  other = "Derniers articles"
+[link_copied]
+  other = "Lien copié"
+[not_found_text]
+  other = "Nous ne pouvons trouver la page demandée"
+[not_found_title]
+  other = "Uh Ohhh!"
+[share_story]
+  other = "Partager"
+[toggle_dark_mode]
+  other = "Basculer le mode sombre"

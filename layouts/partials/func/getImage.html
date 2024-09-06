@@ -1,0 +1,24 @@
+{{ $p := .Params }}
+{{ $image := "thumbnail.svg" }}
+{{ $images_dir := "images/" }}
+{{ if isset $p "image" }}
+  {{ $image = $p.image }}
+{{ end }}
+
+{{ $bg := $image }}
+
+{{ $img_ressource := .Resources.Get $image }}
+{{ if $img_ressource }}
+    {{ $bg = $img_ressource.RelPermalink }}
+{{ else }}
+
+  {{ if eq (in $image "https://") false }}
+    {{ $bg = (printf "%s%s" $images_dir  $image) }}
+    {{ if in $image $images_dir }}
+      {{ $bg = $image }}
+    {{ end }}
+    {{ $bg = absURL $bg }}
+  {{ end }}
+{{ end }}
+
+{{ return $bg }}

@@ -1,0 +1,9 @@
+baseURL: https://unefoi.info/
+defaultContentLanguage: fr
+languageCode: fr-ca
+title: Il était une foi...
+theme: newsroom
+params:
+    locale: fr_ca
+    # logo = '/images/logo.svg'
+    blogDir: journal
