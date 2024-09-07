@@ -15,15 +15,22 @@ h1,h2,h3,h4,h5
   img
     max-height: 1.5em
 
-figure.preview
-  
-  float: left
-  width: 30% !important
-  margin: 0 2em 2em 2em
-
+.floatleft, .floatright
+  width: 25% !important
   img
     border: 2px black solid
-  figcaption
+    margin-bottom: 1ex !important
+  
+  figcaption p
+    text-align: center
     font-size: 14px
     line-height: 1
     font-variant: small-caps
+
+.floatleft
+  float: left
+  margin: 0 2em 0 0
+
+.floatright
+  float: right
+  margin: 0 0 0 2em

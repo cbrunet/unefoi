@@ -1,9 +1,9 @@
 +++
 title = 'Présentons-nous'
-date = "2024-09-01"
+date = "2024-09-07"
 image = 'images/header.png'
 preview = 'images/preview.png'
-file = '2024_09_01.pdf'
+file = '001_2024_09.pdf'
 +++
 
 Dans ce premier numéro de **Il était une foi...**, nos futurs

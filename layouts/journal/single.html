@@ -21,14 +21,14 @@
             {{ if $img_ressource }}
               {{ $preview = $img_ressource.RelPermalink }}
             {{ end }}
-            <figure class="preview">
-              <a href="{{ $.Params.file }}">
+            <figure class="floatleft">
+              <a href="{{ $.Params.file }}" target="_blank">
                 <img src="{{ $preview }}" alt="{{ $alt_text }}" loading="lazy">
               </a>
-              <figcaption><a href="{{ $.Params.file }}">Accéder au journal</a></figcaption>
+              <figcaption><p><a href="{{ $.Params.file }}">Accéder au journal</a></p></figcaption>
             </figure>
             {{ else }}
-              <p><a href="{{ $.Params.file }}">`{{ $alt_text }}</a></p>
+              <p><a href="{{ $.Params.file }}"target="_blank">{{ $alt_text }}</a></p>
             {{ end }}
           {{ end }}
 
