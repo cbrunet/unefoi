@@ -7,3 +7,4 @@ params:
     locale: fr_ca
     # logo = '/images/logo.svg'
     blogDir: journal
+    ga_analytics: G-0TF6ED63MF
