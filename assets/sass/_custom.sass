@@ -15,9 +15,11 @@ h1,h2,h3,h4,h5
   img
     max-height: 1.5em
 
+
 .floatleft, .floatright
-  width: 25% !important
-  zindex: 9
+  @media screen and (min-width: 769px)
+    width: 25% !important
+
   img
     border: 2px black solid
     margin-bottom: 1ex !important
@@ -28,10 +30,11 @@ h1,h2,h3,h4,h5
     line-height: 1
     font-variant: small-caps
 
-.floatleft
-  float: left
-  margin: 0 2em 0 0
+@media screen and (min-width: 769px)
+  .floatleft
+    float: left
+    margin: 0 2em 0 0
 
-.floatright
-  float: right
-  margin: 0 0 0 2em
+  .floatright
+    float: right
+    margin: 0 0 0 2em
